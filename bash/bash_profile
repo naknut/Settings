@@ -21,9 +21,3 @@ function parse_git_branch_and_add_brackets {
 
 #VLC
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
-
-#MySQL
-export MYSQL_HOME=/usr/local/mysql
-alias start_mysql='sudo $MYSQL_HOME/bin/mysqld_safe &'
-alias stop_mysql='sudo $MYSQL_HOME/bin/mysqladmin shutdown'
-alias mysql='$MYSQL_HOME/bin/mysql'
