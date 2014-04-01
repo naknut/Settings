@@ -3,6 +3,10 @@
 #Symlinking .bash_profile
 echo 'Installing bash stuff...'
 ln -s ../bash/bash_profile ~/.bash_profile
+open ../bash/Tomorrow\ Night.terminal
+sleep 1 # Wait a bit to make sure the theme is loaded
+defaults write com.apple.terminal "Default Window Settings" -string "Tomorrow Night"
+defaults write com.apple.terminal "Startup Window Settings" -string "Tomorrow Night"
 echo 'Bash stuff installed.'
 
 #Install Homebrew

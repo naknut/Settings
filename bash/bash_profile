@@ -1,3 +1,6 @@
+#Added by RVM
+source ~/.profile
+
 #Pretty color stuff
 export PS1="\[\033[0;32m\]\u\[\033[0;33m\]@\[\033[0;34m\]\h\[\033[0;37m\]:\W\[\033[0;32m\]\$(parse_git_branch_and_add_brackets)\[\033[0;37m\] $ "
 export CLICOLOR=1
@@ -21,3 +24,5 @@ function parse_git_branch_and_add_brackets {
 
 #VLC
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
