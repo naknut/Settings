@@ -11,6 +11,12 @@ defaults write com.apple.terminal "Default Window Settings" -string "Tomorrow Ni
 defaults write com.apple.terminal "Startup Window Settings" -string "Tomorrow Night"
 echo 'Bash stuff installed.'
 
+#Install atom Settings
+echo 'Installing atom stuff...'
+mkdir ~/.atom
+rm ~/.atom/config.cson
+ln -s $DIR/../atom/config.cson ~/.atom/config.cson
+
 #Install Homebrew
 echo "Installing Homebrew..."
 /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
