@@ -26,6 +26,6 @@ function parse_git_branch_and_add_brackets {
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 
 #Pebble
-export PATH=/Users/Shared/Development/pebble-dev/PebbleSDK-2.0.2/bin:$PATH
+export PATH=~/Development/pebble-dev/PebbleSDK-2.0.2/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

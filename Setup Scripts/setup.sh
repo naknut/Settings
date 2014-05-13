@@ -1,9 +1,11 @@
 #!/bin/bash
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 #Symlinking .bash_profile
 echo 'Installing bash stuff...'
-ln -s ../bash/bash_profile ~/.bash_profile
-open ../bash/Tomorrow\ Night.terminal
+ln -s $DIR/../bash/bash_profile ~/.bash_profile
+open $DIR/../bash/Tomorrow\ Night.terminal
 sleep 1 # Wait a bit to make sure the theme is loaded
 defaults write com.apple.terminal "Default Window Settings" -string "Tomorrow Night"
 defaults write com.apple.terminal "Startup Window Settings" -string "Tomorrow Night"
