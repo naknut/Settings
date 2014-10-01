@@ -10,11 +10,10 @@
   'fontSize': 11
   'fontFamily': 'Menlo'
   'softWrap': true
-  'tabLength': 4
 'core':
   'themes': [
     'atom-dark-ui'
-    'tomorrow-night-syntax'
+    'trendy-dark-syntax'
   ]
 'markdown-stream':
   'externalWebBrowserPort': 8000
@@ -28,3 +27,8 @@
     'smartypants': true
     'langPrefix': 'lang-'
   'newlinesAsIsMode': false
+'tree-view':
+  'hideVcsIgnoredFiles': true
+'preview':
+  '_analyticsUserId': 'bf16aa5e-6fe3-4571-83b5-80edf8cdbb76'
+'autoclose-html': {}
