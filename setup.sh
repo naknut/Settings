@@ -6,7 +6,6 @@ USR=$(env | grep SUDO_USER | cut -d= -f 2)
 #Install XCode
 echo "Installing XCode..."
 softwareupdate --install XCode
-
 #create folder
 sudo -u $USR mkdir ~/Library/Developer/Xcode/UserData/FontAndColorThemes
 #copy color theme file to this new folder
@@ -41,11 +40,21 @@ echo 'Installing iTerm...'
 sudo -u $USR brew cask install iterm2
 echo 'iTerm installed.'
 
+#Insall The Fuck
+echo 'Installing The Fuck'
+sudo -u $USR brew install thefuck
+echo 'The Fuck installed'
+
+#Install zsh
+echo 'Install zsh'
+sudo -u $USR sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo 'zsh installed'
+
 #Symlink dotfiles
 echo 'Symlinking dotfiles'
 for file in Dotfiles/*
 do
-  ln -s "$file" "$HOME/.${file##*/}"
+  sudo -u $USR ln -s "$file" "$HOME/.${file##*/}"
 done
 echo 'Done symlinking files'
 
