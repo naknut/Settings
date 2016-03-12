@@ -41,4 +41,12 @@ echo 'Installing iTerm...'
 sudo -u $USR brew cask install iterm2
 echo 'iTerm installed.'
 
+#Symlink dotfiles
+echo 'Symlinking dotfiles'
+for file in Dotfiles/*
+do
+  ln -s "$file" "$HOME/.${file##*/}"
+done
+echo 'Done symlinking files'
+
 echo 'Done!'

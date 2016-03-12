@@ -1,0 +1,5 @@
+[user]
+	email = mail@naknut.se
+	name = Marcus Isaksson
+[push]
+	default = simple
