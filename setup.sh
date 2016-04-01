@@ -54,7 +54,7 @@ echo 'zsh installed'
 echo 'Symlinking dotfiles'
 for file in Dotfiles/*
 do
-  sudo -u $USR ln -s "$file" "$HOME/.${file##*/}"
+  sudo -u $USR ln -s "$DIR/$file" "$HOME/.${file##*/}"
 done
 echo 'Done symlinking files'
 
