@@ -1,0 +1,14 @@
+"*":
+  core:
+    themes: [
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    fontSize: 11
+    invisibles: {}
+  "exception-reporting":
+    userId: "df6a197c-18bf-e315-57d4-f3916677d424"
+  "one-dark-ui": {}
+  welcome:
+    showOnStartup: false
