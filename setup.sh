@@ -58,4 +58,16 @@ do
 done
 echo 'Done symlinking files'
 
+#Symlink atom files
+echo 'Symlinking atom files'
+mkdir ~/.atom
+for file in atom/*
+do
+  sudo -u $USR ln -s "$DIR/atom/$file" "$HOME/.atom/${file##*/}"
+done
+echo 'Done symlinking atom files'
+
+#Install apm packages
+apm install jshint
+
 echo 'Done!'
