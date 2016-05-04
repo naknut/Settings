@@ -45,6 +45,10 @@ echo 'Installing The Fuck'
 sudo -u $USR brew install thefuck
 echo 'The Fuck installed'
 
+#Install hub
+echo 'Installing hub'
+sudo -u $USR brew install hub
+
 #Install zsh
 echo 'Install zsh'
 sudo -u $USR sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
