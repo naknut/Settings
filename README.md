@@ -1,3 +1,5 @@
+I no longer use this. See naknut/dotfiles
+
 Settings
 ========
 
