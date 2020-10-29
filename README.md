@@ -1,4 +1,4 @@
-I no longer use this. See naknut/dotfiles
+I no longer use this. See https://github.com/naknut/dotfiles
 
 Settings
 ========
